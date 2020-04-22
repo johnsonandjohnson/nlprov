@@ -1,0 +1,8 @@
+version: '3.5'
+services:
+  nlp:
+    container_name: nlp
+    build:
+      context: .
+    volumes:
+      - .:/opt/app/

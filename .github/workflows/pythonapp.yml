@@ -1,0 +1,36 @@
+# This workflow will install Python dependencies, run tests and lint with a single version of Python
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
+
+name: NLProv Build, Test, and Pacakge
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: '*'
+
+jobs:
+  build:
+    name: Build and Test Environment
+    runs-on: 'ubuntu-latest'
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Conda Environment
+        uses: goanpeca/setup-miniconda@v1
+        with:
+          activate-environment: nlp_env
+          environment-file: dev_environment.yml
+          python-version: 3.7
+          auto-activate-base: false
+      - name: Run Unit Tests
+        shell: bash -l {0}
+        run: |
+          conda activate nlp_env && pytest --junitxml=results.xml --cov=nlprov --cov-report xml nlprov/test
+      - name: Lint Tutorial Notebook
+        shell: bash -l {0}
+        run: |
+          pip install jupyter && pip install flake8 && jupyter nbconvert tutorial.ipynb --to script --stdout | flake8 - --ignore=W391
+      - name: Run Packaging Step
+        shell: bash -l {0}
+        run: |
+          python -m pip install --user --upgrade setuptools wheel && python setup.py sdist bdist_wheel && python -m pip install --user dist/NLProv-1.0.0-py3-none-any.whl && python -m spacy download en_core_web_sm && python nlp_example.py

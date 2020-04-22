@@ -127,3 +127,14 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+*.pyc
+.pytest_cache
+.idea
+venv/*
+build/*
+dist/*
+.sonar/*
+NLProv.egg-info/*
+coverage*
+.coverage*
