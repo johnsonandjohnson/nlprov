@@ -1,5 +1,7 @@
 # __NLProv__: Natural Language Processing Tool
 
+![NLProv Build, Test, and Package](https://github.com/johnsonandjohnson/nlprov/workflows/NLProv%20Build,%20Test,%20and%20Package/badge.svg)
+
 NLProv is a Python library developed by Johnson & Johnson's Advanced Analytics 
 team that combines existing libraries for common Natural Language Processing tasks.
 It combines several existing open-source libraries such as pandas, spaCy, and
@@ -65,7 +67,7 @@ environment defined by our dev_environment.yml file using the below command.
 
 ## GitHub Action CI Configuration
 - Every commit to this repository will trigger a build in GitHub Actions following the
- .github/workflows/pythonapp.yml located in the source this project.
+ .github/workflows/pythonapp.yml located in the root of this project.
   - GitHub Actions is used to build and lint the NLProv package, run the tests, and perform pip packaging.
   - If the environment name or version changes, the pythonapp.yml file will need to be updated to 
   follow the new pattern.
