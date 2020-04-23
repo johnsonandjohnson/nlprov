@@ -8,6 +8,9 @@
  <a href="https://github.com/johnsonandjohnson/nlprov/actions">
    <img src="https://github.com/johnsonandjohnson/nlprov/workflows/Build,%20Test,%20and%20Package/badge.svg" />
  </a>
+ <a href="https://codecov.io/gh/johnsonandjohnson/nlprov">
+   <img src="https://codecov.io/gh/johnsonandjohnson/nlprov/branch/master/graph/badge.svg" />
+ </a>
 </p>
 
 NLProv is a Python library developed by Johnson & Johnson's Advanced Analytics 
