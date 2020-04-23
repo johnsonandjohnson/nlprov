@@ -1,6 +1,14 @@
+<p align="center">
+  <img width="250" src="https://github.com/johnsonandjohnson/nlprov/raw/master/images/nlplogo.png">
+</p>
+
 # __NLProv__: Natural Language Processing Tool
 
-![NLProv Build, Test, and Package](https://github.com/johnsonandjohnson/nlprov/workflows/NLProv%20Build,%20Test,%20and%20Package/badge.svg)
+<p align="left">
+ <a href="https://github.com/johnsonandjohnson/nlprov/actions">
+   <img src="https://github.com/johnsonandjohnson/nlprov/workflows/Build,%20Test,%20and%20Package/badge.svg" />
+ </a>
+</p>
 
 NLProv is a Python library developed by Johnson & Johnson's Advanced Analytics 
 team that combines existing libraries for common Natural Language Processing tasks.
