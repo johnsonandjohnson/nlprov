@@ -26,7 +26,7 @@ A tutorial on how to use this package can be found [here](tutorial.ipynb).
 
 ## Installation Instructions
 
-   - Using pip:
+   - Using pip with Python version 3.7 or higher:
         ```shell
         pip install nlprov
         ```
