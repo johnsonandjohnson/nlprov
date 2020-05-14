@@ -26,19 +26,13 @@ A tutorial on how to use this package can be found [here](tutorial.ipynb).
 
 ## Installation Instructions
 
-### To install this package locally:
-   - Clone the repository from the master branch
-   - Within the terminal, navigate into the repo directory
-   - Run the following command to install nlp_python_package locally:
+   - Using pip with Python version 3.7 or higher:
         ```shell
-        pip install .
-        python -m spacy download en_core_web_sm 
-        # en_core_web_sm is required for spacy text pre-processing
-        # The . can be replaced with a path to the directory instead
+        pip install nlprov
         ```
    - For more information on installing packages using pip, click [here](https://pip.pypa.io/en/stable/reference/pip_install/).
 
-### Contributing 
+## Contributing 
 - To help develop this package, you'll need to install a conda virtual 
 environment defined by our dev_environment.yml file using the below command.
 

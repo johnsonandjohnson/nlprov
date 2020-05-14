@@ -8,7 +8,7 @@ pkgs = find_packages()
 readme = open('README.md', encoding='utf-8').read()
 
 setup(
-    name='NLProv',
+    name='nlprov',
     version='1.0.0',
     description='A Python package for common Natural Language Processing tasks',
     long_description=readme,
@@ -22,6 +22,16 @@ setup(
         'nltk>=3.4.3',
         'langid>=1.1.6',
         'scikit-learn>=0.21.3'
+    ],
+    classifiers=[
+        'Development Status :: 5 - Production/Stable',
+        'License :: OSI Approved :: MIT License',
+        'Intended Audience :: Developers',
+        'Intended Audience :: Education',
+        'Intended Audience :: Healthcare Industry',
+        'Intended Audience :: Information Technology',
+        'Programming Language :: Python :: 3.7',
+        'Topic :: Scientific/Engineering'
     ],
     tests_require=['pytest'],
     python_requires='>=3.7'
