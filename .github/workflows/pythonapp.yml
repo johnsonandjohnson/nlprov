@@ -27,7 +27,7 @@ jobs:
         run: |
           conda activate nlp_env && pytest --junitxml=results.xml --cov=nlprov --cov-report xml nlprov/test
       - name: Upload Coverage Report
-        uses: codecov/codecov-action@v1
+        uses: codecov/codecov-action@v2
       - name: Lint Tutorial Notebook
         shell: bash -l {0}
         run: |
