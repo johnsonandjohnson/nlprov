@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="250" src="https://github.com/johnsonandjohnson/nlprov/raw/master/images/nlplogo.png">
+  <img width="250" src="https://github.com/johnsonandjohnson/nlprov/raw/main/images/nlplogo.png">
 </p>
 
 # __NLProv__: Natural Language Processing Tool
