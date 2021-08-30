@@ -4,12 +4,12 @@
 
 # __NLProv__: Natural Language Processing Tool
 
-<p align="left">
+<p>
  <a href="https://github.com/johnsonandjohnson/nlprov/actions">
-   <img src="https://github.com/johnsonandjohnson/nlprov/workflows/Build,%20Test,%20and%20Package/badge.svg" />
+   <img src="https://github.com/johnsonandjohnson/nlprov/workflows/Build,%20Test,%20and%20Package/badge.svg" alt=""/>
  </a>
  <a href="https://codecov.io/gh/johnsonandjohnson/nlprov">
-   <img src="https://codecov.io/gh/johnsonandjohnson/nlprov/branch/master/graph/badge.svg" />
+   <img src="https://codecov.io/gh/johnsonandjohnson/nlprov/branch/main/graph/badge.svg?token=hFbF8ID1Na" alt=""/>
  </a>
 </p>
 
