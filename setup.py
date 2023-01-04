@@ -18,7 +18,7 @@ setup(
     packages=pkgs,
     install_requires=[
         'pandas>=1.0.0',
-        'spacy>=2.1.0,<2.1.7',
+        'spacy>=3.4',
         'nltk>=3.4.3',
         'langid>=1.1.6',
         'scikit-learn>=0.21.3'
