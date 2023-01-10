@@ -70,7 +70,7 @@ def preprocess_text(text: pd.Series,
     text = text.apply(lambda s: re.sub(regex, ' ', s))
 
     text = text.str.strip()
-    text = text.str.replace(r'\s+', ' ')
+    text = text.str.replace(r'\s+', ' ', regex=True)
 
     if eng_lang:
         text = text[text.apply(lambda t: langid.classify(t)[0]) == 'en']
