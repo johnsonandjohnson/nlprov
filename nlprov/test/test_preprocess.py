@@ -224,7 +224,7 @@ def lemma_actual():
 
 @pytest.fixture
 def lemma_expected():
-    return pd.Series(data=["lemma need",
+    return pd.Series(data=["lemmas need",
                            "duck and cat and pony be not similar",
                            "normal string"])
 
@@ -238,10 +238,10 @@ def test_lemma(lemma_actual, lemma_expected):
 # Test data for the list of token list output (lemmas)
 @pytest.fixture
 def token_list_expected():
-    return pd.Series(data=[["lemma", "need"],
-                           ["duck", "and", "cat", "and", "pony", "be",
-                            "not", "similar"],
-                           ["normal", "string"]])
+    return pd.Series(data=[['lemmas', 'need'],
+                           ['duck', 'and', 'cat', 'and', 'pony', 'be',
+                            'not', 'similar'],
+                           ['normal', 'string']])
 
 
 # Test data for the list of token list output (no lemmas)
