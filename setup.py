@@ -9,7 +9,7 @@ readme = open('README.md', encoding='utf-8').read()
 
 setup(
     name='nlprov',
-    version='1.0.0',
+    version='1.0.1',
     description='A Python package for common Natural Language Processing tasks',
     long_description=readme,
     long_description_content_type='text/markdown',
@@ -34,5 +34,8 @@ setup(
         'Topic :: Scientific/Engineering'
     ],
     tests_require=['pytest'],
-    python_requires='>=3.7'
+    python_requires='>=3.8'
 )
+
+
+# https://github.com/tomchen/example_pypi_package/blob/d50c61f1317c0cc7d1fc8927d666da7355732c61/README.md
