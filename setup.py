@@ -30,7 +30,7 @@ setup(
         'Intended Audience :: Education',
         'Intended Audience :: Healthcare Industry',
         'Intended Audience :: Information Technology',
-        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
         'Topic :: Scientific/Engineering'
     ],
     tests_require=['pytest'],
