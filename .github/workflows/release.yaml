@@ -1,14 +1,11 @@
 name: PyPI Release
 
-on:
-  push:
-    branches: '5-set-up-workflow-to-upload-to-pypi'
-#  release:
-#    types: [created]
+  release:
+    types: [created]
 
 jobs:
   deploy:
-    name: Build and publish to PyPI
+    name: Build and publish to PyPI and TestPyPI
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -34,19 +31,8 @@ jobs:
         with:
           password: ${{ secrets.TESTPYPI_API_TOKEN }}
           repository_url: https://test.pypi.org/legacy/
-
-#      - name: Install dependencies
-#        run: |
-#          python -m pip install --upgrade pip
-#          pip install setuptools
-#          pip install wheel
-#          pip install twine
-#      - name: Build and publish
-#        env:
-#          TWINE_USERNAME: __token__
-##          TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
-#          TWINE_PASSWORD: ${{ secrets.TESTPYPI_API_TOKEN }}
-#        run: |
-#          python setup.py sdist bdist_wheel
-##          twine upload --repository pypi dist/*
-#          twine upload --repository testpypi dist/*
+      - name: Publish distribution 📦 to PyPI
+        if: startsWith(github.ref, 'refs/tags')
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          password: ${{ secrets.PYPI_API_TOKEN }}
