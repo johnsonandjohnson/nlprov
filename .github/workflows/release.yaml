@@ -1,9 +1,8 @@
 name: PyPI Release
 
 on:
-  on:
-    push:
-      branches: '5-set-up-workflow-to-upload-to-pypi'
+  push:
+    branches: '5-set-up-workflow-to-upload-to-pypi'
 #  release:
 #    types: [created]
 
