@@ -20,7 +20,7 @@ jobs:
         with:
           activate-environment: nlp_env
           environment-file: dev_environment.yml
-          python-version: 3.8
+          python-version: 3.7
           auto-activate-base: false
       - name: Run Unit Tests
         shell: bash -l {0}
