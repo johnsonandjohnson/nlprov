@@ -9,7 +9,7 @@ readme = open('README.md', encoding='utf-8').read()
 
 setup(
     name='nlprov',
-    version='1.0.1',
+    version='1.1.0',
     description='A Python package for common Natural Language Processing tasks',
     long_description=readme,
     long_description_content_type='text/markdown',
